@@ -1,0 +1,71 @@
+.hero {
+  height: 100vh;
+  background: #151b2b;
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  &__logo {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    height: 10vh;
+    p {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #a8a8c1;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    color: white;
+    width: 80%;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    p {
+      padding: 5px;
+      font-size: 1rem;
+      color: #8686b2;
+    }
+  }
+  &__container__button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  &__button {
+    color: white;
+    border: 1px transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    transform: scale(1);
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+    &--github {
+      background: #454658;
+    }
+    &--discord {
+      background: #6578c0;
+    }
+  }
+}

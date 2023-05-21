@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Hanken";
+  src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+$font1: Hanken, serif;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $font1;
+  background: white;
+}
+
+button{
+  font-family: $font1;
+}
