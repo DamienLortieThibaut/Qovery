@@ -29,7 +29,7 @@ button {
 }
 .hero__logo {
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: minmax(60px, 10%) minmax(0, 90%);
   align-items: center;
   height: 10vh;
 }
@@ -50,7 +50,9 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 30vh;
+}
+.hero__text > * {
+  margin: 10px 0;
 }
 .hero__text h1 {
   font-size: 2rem;
@@ -87,4 +89,34 @@ button {
 }
 .hero__button--discord {
   background: #6578c0;
+}
+.hero__left > * {
+  height: 220px;
+  position: relative;
+}
+.hero__img {
+  position: relative;
+  opacity: 0;
+  animation: HeroSlideIn 0.8s forwards;
+}
+.hero__img--1 {
+  z-index: 10;
+}
+.hero__img--2 {
+  z-index: 9;
+  animation-delay: 0.3s;
+}
+.hero__img--3 {
+  z-index: 8;
+  animation-delay: 0.5s;
+}
+@keyframes HeroSlideIn {
+  0% {
+    transform: translateY(-18%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.css.map */
